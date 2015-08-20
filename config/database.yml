@@ -3,9 +3,8 @@ default: &default
   encoding: unicode
   pool: 5
   username: postgres
-  password: <%= ENV['POSTGRESQL_ENV_POSTGRES_PASSWORD'] %>
-  host: <%= ENV['POSTGRESQL_PORT_5432_TCP_ADDR'] %>
-  port: <%= ENV['POSTGRESQL_PORT_5432_TCP_PORT'] %>
+  password:
+  host: db
 
 development:
   <<: *default
